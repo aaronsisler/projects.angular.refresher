@@ -1,6 +1,12 @@
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  padding-block-start: 1rem;
+  section {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   min-height: 500px;
   background-color: aqua;
 }

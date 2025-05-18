@@ -2,6 +2,7 @@ import { Component } from "@angular/core";
 import { RouterOutlet } from "@angular/router";
 import { LeftSideComponent } from "./left-side/left-side.component";
 import { RightSideComponent } from "./right-side/right-side.component";
+import { CountService } from "./services/count-service";
 
 @Component({
   selector: "app-root",
@@ -10,5 +11,5 @@ import { RightSideComponent } from "./right-side/right-side.component";
   styleUrl: "./app.component.scss",
 })
 export class AppComponent {
-  title = "refresher";
+  constructor(public countService: CountService) {}
 }

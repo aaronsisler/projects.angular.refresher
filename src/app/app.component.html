@@ -1,2 +1,5 @@
-<main><app-left-side /> <app-right-side /></main>
+<main>
+  <div>This is the count: {{ countService.count() }}</div>
+  <section class="split"><app-left-side /> <app-right-side /></section>
+</main>
 <router-outlet />
