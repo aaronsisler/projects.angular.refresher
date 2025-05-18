@@ -3,7 +3,8 @@ projects.angular.refresher
 ## TODOs
 
 - See how the app layout should be folders wise i.e. where should pages go? How do routes play into this?
-- Get the count store working with `npm install @ngrx/signals`
+- Get the count store working with `npm install @ngrx/signals`. Example code below.
+- Think about making a call to Event Service as a POC for how RxJS works
 
 From ChatGPT:
 
