@@ -1,1 +1,12 @@
-<section class="left-side">Left Side</section>
+<section class="left-side">
+  <p>Name: {{ nameForm.value.name }}</p>
+  <br />
+  <hr />
+  <form [formGroup]="nameForm" (ngSubmit)="handleSubmit()">
+    <label>
+      Name:
+      <input type="text" formControlName="name" />
+    </label>
+    <button type="submit" [disabled]="nameForm.invalid">Submit</button>
+  </form>
+</section>
