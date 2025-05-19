@@ -1,15 +1,13 @@
 import { Component } from "@angular/core";
 import { RouterOutlet } from "@angular/router";
-import { LeftSideComponent } from "./left-side/left-side.component";
-import { RightSideComponent } from "./right-side/right-side.component";
-import { CountService } from "./services/count-service";
+import { NavbarComponent } from "./shared/navbar/navbar.component";
+import { CountStore } from "./core/stores/count.store";
 
 @Component({
   selector: "app-root",
-  imports: [RouterOutlet, LeftSideComponent, RightSideComponent],
+  imports: [RouterOutlet, NavbarComponent],
   templateUrl: "./app.component.html",
   styleUrl: "./app.component.scss",
+  providers: [CountStore],
 })
-export class AppComponent {
-  constructor(public countService: CountService) {}
-}
+export class AppComponent {}
